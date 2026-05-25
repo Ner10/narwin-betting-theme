@@ -33,14 +33,7 @@
     <header class="main-header">
         <div class="header-left">
             <a href="#" class="logo-link">
-                <!-- Narwin Logo: Silver gradient text with glowing red wings -->
-                <div class="brand-logo">
-                    <svg class="wing-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3M12 21V3" stroke="#ff1e27" stroke-width="2"/>
-                        <path d="M4 12C6 10 9 10 11 11M4 14C6 13 9 13 11 14M5 16C7 15 9 15 11 16M20 12C18 10 15 10 13 11M20 14C18 13 15 13 13 14M19 16C17 15 15 15 13 16" stroke="#ff1e27" stroke-width="2"/>
-                    </svg>
-                    <span class="brand-name">NARWIN</span>
-                </div>
+                <img src="images/logo.png" alt="Narwin Logo" class="brand-logo-img">
             </a>
         </div>
 
@@ -60,8 +53,17 @@
 
             <!-- Giriş & Kayıt Butonları -->
             <div class="header-user-actions">
-                <a href="#" class="login-link">GİRİŞ</a>
-                <a href="#" class="register-btn">KAYIT OL</a>
+                <a href="#" class="login-btn-premium" id="open-login-modal">
+                    <span class="btn-shine"></span>
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    <span>GİRİŞ</span>
+                </a>
+                <a href="#" class="register-btn-premium" id="open-register-modal">
+                    <span class="btn-glow-border"></span>
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    <span>KAYIT OL</span>
+                    <span class="btn-pulse-ring"></span>
+                </a>
             </div>
 
             <!-- Dil & Saat & Diğer Ayarlar -->
@@ -86,38 +88,38 @@
         <ul class="nav-menu-list">
             <li class="nav-item active">
                 <a href="#" class="nav-link">
-                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>
                     <span>PROMOSYONLAR</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93s3.05-7.44 7-7.93v15.86zm2-15.86c1.03.13 2 .45 2.87.93H13v-.93zM13 7h5.24c.25.31.48.65.68 1H13V7zm0 3h6.74c.08.33.15.66.19 1H13v-1zm0 3h6.93c-.04.34-.11.67-.19 1H13v-1zm0 3h5.92c-.2.35-.43.69-.68 1H13v-1zm0 3h2.87c-.87.48-1.84.8-2.87.93V16z"/></svg>
                     <span>SPOR BAHİSLERİ</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
                     <div class="pulse-indicator"></div>
-                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>
                     <span>CANLI BAHİSLER</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.5 4.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5S10 9.83 10 9s.67-1.5 1.5-1.5zM18 17H6l3-3.86 2.14 2.58 3-3.86L18 17zM7.5 9c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5S7.5 9.83 7.5 9z"/></svg>
                     <span>SLOT CASINO</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/></svg>
                     <span>CANLI CASINO</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
                     <span>HIZLI OYUNLAR</span>
                 </a>
             </li>
@@ -129,19 +131,19 @@
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M4 4h16v12H5.17L4 17.17V4m0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H4zm2 10h8v2H6v-2zm0-3h12v2H6V9zm0-3h12v2H6V6z"/></svg>
                     <span>TOMBALA</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M2.5 19h19v2h-19zm19.57-9.36c-.21-.8-1.04-1.28-1.84-1.06L14.9 9.9 8.24 4.88c-.62-.47-1.5-.35-1.97.27-.47.62-.35 1.5.27 1.97l5.3 4-4.8 1.28-3.08-1.5c-.39-.19-.85-.15-1.2.1l-1.04.77 4.54 2.5 2.37 1.3 9.1-2.44c.8-.21 1.28-1.04 1.06-1.84z"/></svg>
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M22 16.21v-1.2L14 8V4h2V2H8v2h2v4.01L2 14.98v1.23l8.5-1V22l-2.5 1.5V25h5.95v-1.5L11.5 22v-6.77l10.5 1z"/></svg>
                     <span>AVİATÖR</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm-9 12l-4-4h8l-4 4z"/></svg>
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12zM10 8l5 4-5 4z"/></svg>
                     <span>NARWIN TV</span>
                 </a>
             </li>
@@ -169,97 +171,135 @@
             </a>
         </div>
 
-        <!-- HERO SECTION (Slider & Info Grid) -->
+        <!-- HERO SECTION (Full Width Banner) -->
         <section class="hero-section">
-            <div class="hero-left">
-                <!-- Yatırım Tutarları Gold/Silver Board -->
-                <div class="deposit-limits-board">
-                    <h2 class="board-title">MİNİMUM YATIRIM TUTARLARIMIZ</h2>
-                    <ul class="board-list">
-                        <li class="board-item">
-                            <span class="method">Havale</span>
-                            <span class="amount">250 ₺</span>
-                        </li>
-                        <li class="board-item">
-                            <span class="method">Kripto</span>
-                            <span class="amount">250 ₺</span>
-                        </li>
-                        <li class="board-item">
-                            <span class="method">Kredi Kartı</span>
-                            <span class="amount">250 ₺</span>
-                        </li>
-                        <li class="board-item">
-                            <span class="method">Banka Kartı</span>
-                            <span class="amount">250 ₺</span>
-                        </li>
-                    </ul>
-                    <div class="board-footer">
-                        <span>Güvenilir & Hızlı Yatırım Altyapısı</span>
-                    </div>
+            <div class="hero-banner-full">
+                <img src="images/hero_banner.png" alt="Narwin Hero Banner" class="hero-banner-img">
+            </div>
+        </section>
+
+        <!-- JACKPOT GRID -->
+        <section class="jackpot-grid">
+            <div class="jackpot-card jackpot-mini">
+                <div class="jackpot-icon-wrapper">
+                    <img src="images/jackpot-icons.png" alt="Mini" class="jackpot-icon-img" style="object-position: 0 75%;">
+                </div>
+                <div class="jackpot-info">
+                    <span class="jackpot-tier">MINI</span>
+                    <span class="jackpot-amount" data-target="4851620" data-decimals="9">0,00 ₺</span>
+                    <span class="jackpot-win-label">WIN PRIZES</span>
                 </div>
             </div>
-            
-            <div class="hero-right">
-                <!-- Golden Winged Character Image Banner Overlay -->
-                <div class="hero-character-banner">
-                    <img src="images/hero_character.png" alt="Narwin Canlı Casino" class="hero-char-img">
-                    <div class="hero-brand-caption">
-                        <span class="sub">NARWIN</span>
-                        <h1 class="main">LİDER iGAMING SAĞLAYICISI</h1>
-                        <span class="choices">SEÇKİN CASINO DENEYİMİ</span>
-                    </div>
+            <div class="jackpot-card jackpot-minor">
+                <div class="jackpot-icon-wrapper">
+                    <img src="images/jackpot-icons.png" alt="Minor" class="jackpot-icon-img" style="object-position: 0 50%;">
+                </div>
+                <div class="jackpot-info">
+                    <span class="jackpot-tier">MINOR</span>
+                    <span class="jackpot-amount" data-target="2914192" data-decimals="42">0,00 ₺</span>
+                    <span class="jackpot-win-label">WIN PRIZES</span>
+                </div>
+            </div>
+            <div class="jackpot-card jackpot-major">
+                <div class="jackpot-icon-wrapper">
+                    <img src="images/jackpot-icons.png" alt="Major" class="jackpot-icon-img" style="object-position: 0 25%;">
+                </div>
+                <div class="jackpot-info">
+                    <span class="jackpot-tier">MAJOR</span>
+                    <span class="jackpot-amount" data-target="5316722" data-decimals="04">0,00 ₺</span>
+                    <span class="jackpot-win-label">WIN PRIZES</span>
+                </div>
+            </div>
+            <div class="jackpot-card jackpot-grand">
+                <div class="jackpot-icon-wrapper">
+                    <img src="images/jackpot-icons.png" alt="Grand" class="jackpot-icon-img" style="object-position: 0 0%;">
+                </div>
+                <div class="jackpot-info">
+                    <span class="jackpot-tier">GRAND</span>
+                    <span class="jackpot-amount" data-target="51361732" data-decimals="69">0,00 ₺</span>
+                    <span class="jackpot-win-label">WIN PRIZES</span>
                 </div>
             </div>
         </section>
 
-        <!-- KATEGORİ KARTLARI (Main Category Cards Grid) -->
-        <section class="category-cards-grid">
-            
-            <!-- BONUSLAR -->
-            <div class="category-card" style="background-image: url('images/card_bonuses.png');">
-                <div class="card-overlay">
-                    <h2 class="card-title">BONUSLAR</h2>
-                    <a href="#" class="card-action-btn">HEMEN OYNA</a>
+        <!-- PROVIDER ICONS MARQUEE -->
+        <section class="providers-marquee-section">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <img src="images/providers/p1.svg" alt="Provider" class="marquee-icon">
+                    <img src="images/providers/p2.svg" alt="Provider" class="marquee-icon">
+                    <img src="images/providers/p3.svg" alt="Provider" class="marquee-icon">
+                    <img src="images/providers/p4.svg" alt="Provider" class="marquee-icon">
+                    <img src="images/providers/p5.svg" alt="Provider" class="marquee-icon">
+                    <img src="images/providers/p6.svg" alt="Provider" class="marquee-icon">
+                    <img src="images/providers/p7.svg" alt="Provider" class="marquee-icon">
+                    <img src="images/providers/p8.svg" alt="Provider" class="marquee-icon">
+                    <img src="images/providers/p9.svg" alt="Provider" class="marquee-icon">
+                </div>
+                <div class="marquee-content" aria-hidden="true">
+                    <img src="images/providers/p1.svg" alt="" class="marquee-icon">
+                    <img src="images/providers/p2.svg" alt="" class="marquee-icon">
+                    <img src="images/providers/p3.svg" alt="" class="marquee-icon">
+                    <img src="images/providers/p4.svg" alt="" class="marquee-icon">
+                    <img src="images/providers/p5.svg" alt="" class="marquee-icon">
+                    <img src="images/providers/p6.svg" alt="" class="marquee-icon">
+                    <img src="images/providers/p7.svg" alt="" class="marquee-icon">
+                    <img src="images/providers/p8.svg" alt="" class="marquee-icon">
+                    <img src="images/providers/p9.svg" alt="" class="marquee-icon">
                 </div>
             </div>
+        </section>
 
-            <!-- CANLI CASINO -->
-            <div class="category-card" style="background-image: url('images/card_live_casino.png');">
-                <div class="card-overlay">
-                    <h2 class="card-title">CANLI CASINO</h2>
-                    <a href="#" class="card-action-btn">HEMEN OYNA</a>
+        <!-- 8 İKON KARTLARI (Feature Icons Grid) -->
+        <section class="feature-icons-grid">
+            <a href="#" class="feature-icon-card">
+                <div class="feature-icon-img-wrapper">
+                    <img src="images/card_sportsbook.png" alt="Spor Bahisleri" class="feature-icon-img">
                 </div>
-            </div>
-
-            <!-- SLOT ÇEVİR (Custom CSS/SVG render) -->
-            <div class="category-card slot-cevir-special-card">
-                <div class="card-overlay">
-                    <div class="spin-icon-wrapper">
-                        <svg class="spin-arrows" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
-                        </svg>
-                    </div>
-                    <h2 class="card-title">SLOT ÇEVİR</h2>
-                    <a href="#" class="card-action-btn spin-btn">HEMEN OYNA</a>
+                <span class="feature-icon-label">Spor Bahisleri</span>
+            </a>
+            <a href="#" class="feature-icon-card">
+                <div class="feature-icon-img-wrapper">
+                    <img src="images/card_live_casino.png" alt="Canlı Casino" class="feature-icon-img">
                 </div>
-            </div>
-
-            <!-- SLOT CASINO -->
-            <div class="category-card" style="background-image: url('images/card_slot_casino.png');">
-                <div class="card-overlay">
-                    <h2 class="card-title">SLOT CASINO</h2>
-                    <a href="#" class="card-action-btn">HEMEN OYNA</a>
+                <span class="feature-icon-label">Canlı Casino</span>
+            </a>
+            <a href="#" class="feature-icon-card">
+                <div class="feature-icon-img-wrapper">
+                    <img src="images/card_slot_casino.png" alt="Slot Casino" class="feature-icon-img">
                 </div>
-            </div>
-
-            <!-- SPOR BAHİSLERİ -->
-            <div class="category-card" style="background-image: url('images/card_sportsbook.png');">
-                <div class="card-overlay">
-                    <h2 class="card-title">SPOR BAHİSLERİ</h2>
-                    <a href="#" class="card-action-btn">HEMEN OYNA</a>
+                <span class="feature-icon-label">Slot Casino</span>
+            </a>
+            <a href="#" class="feature-icon-card">
+                <div class="feature-icon-img-wrapper">
+                    <img src="images/card_bonuses.png" alt="Bonuslar" class="feature-icon-img">
                 </div>
-            </div>
-
+                <span class="feature-icon-label">Bonuslar</span>
+            </a>
+            <a href="#" class="feature-icon-card">
+                <div class="feature-icon-img-wrapper">
+                    <img src="images/icon_populer_maclar.png" alt="Popüler Maçlar" class="feature-icon-img">
+                </div>
+                <span class="feature-icon-label">Popüler Maçlar</span>
+            </a>
+            <a href="#" class="feature-icon-card">
+                <div class="feature-icon-img-wrapper">
+                    <img src="images/icon_yuksek_limitli.png" alt="Yüksek Limitli" class="feature-icon-img">
+                </div>
+                <span class="feature-icon-label">Yüksek Limitli</span>
+            </a>
+            <a href="#" class="feature-icon-card">
+                <div class="feature-icon-img-wrapper">
+                    <img src="images/icon_narwin_tv.png" alt="Narwin TV" class="feature-icon-img">
+                </div>
+                <span class="feature-icon-label">Narwin TV</span>
+            </a>
+            <a href="#" class="feature-icon-card">
+                <div class="feature-icon-img-wrapper">
+                    <img src="images/icon_mobil_uygulama.png" alt="Mobil Uygulama" class="feature-icon-img">
+                </div>
+                <span class="feature-icon-label">Mobil Uygulama</span>
+            </a>
         </section>
 
         <!-- ÖNERİLEN BAHİSLER (Suggested Bets Matches Ticker) -->
@@ -283,14 +323,16 @@
                         <div class="match-card-body">
                             <div class="teams-score-block">
                                 <div class="team">
+                                    <img src="images/logos/Torino.png" alt="Torino" class="team-logo">
                                     <span class="team-name">Torino</span>
                                 </div>
                                 <div class="score-time">
                                     <span class="score">2 : 2</span>
                                     <span class="match-period">2. Yarı</span>
                                 </div>
-                                <div class="team">
+                                <div class="team team-right">
                                     <span class="team-name">Juventus</span>
+                                    <img src="images/logos/Juventus.png" alt="Juventus" class="team-logo">
                                 </div>
                             </div>
                             <div class="odds-actions">
@@ -323,14 +365,16 @@
                         <div class="match-card-body">
                             <div class="teams-score-block">
                                 <div class="team">
+                                    <img src="images/logos/Real Madrid.png" alt="Real Madrid" class="team-logo">
                                     <span class="team-name">Real Madrid</span>
                                 </div>
                                 <div class="score-time">
                                     <span class="score">1 : 0</span>
                                     <span class="match-period">1. Yarı</span>
                                 </div>
-                                <div class="team">
+                                <div class="team team-right">
                                     <span class="team-name">Barcelona</span>
+                                    <img src="images/logos/Barcelona.png" alt="Barcelona" class="team-logo">
                                 </div>
                             </div>
                             <div class="odds-actions">
@@ -364,14 +408,16 @@
                         <div class="match-card-body">
                             <div class="teams-score-block">
                                 <div class="team">
+                                    <img src="images/logos/Bayern Munich.png" alt="Bayern Münih" class="team-logo">
                                     <span class="team-name">Bayern Münih</span>
                                 </div>
                                 <div class="score-time">
                                     <span class="score">3 : 1</span>
                                     <span class="match-period">72'</span>
                                 </div>
-                                <div class="team">
+                                <div class="team team-right">
                                     <span class="team-name">Dortmund</span>
+                                    <img src="images/logos/Dortmund.png" alt="Dortmund" class="team-logo">
                                 </div>
                             </div>
                             <div class="odds-actions">
@@ -404,58 +450,41 @@
             </div>
             
             <div class="games-grid">
-                <!-- Game Item 1 (Shining Crown themed card) -->
-                <div class="game-card-item">
-                    <div class="game-thumb" style="background: linear-gradient(135deg, #e50914, #500000);">
-                        <span class="game-badge">HOT</span>
-                        <div class="crown-vector">👑</div>
+                <a href="#" class="game-card-item">
+                    <div class="game-thumb">
+                        <img src="images/slots/s1.webp" alt="Slot" class="game-thumb-img">
                     </div>
-                    <span class="game-name">40 Shining Crown</span>
-                </div>
-
-                <!-- Game Item 2 (Gates of Olympus themed card) -->
-                <div class="game-card-item">
-                    <div class="game-thumb" style="background: linear-gradient(135deg, #2a2a72, #009ffd);">
-                        <span class="game-badge green">1000X</span>
-                        <div class="zeus-mini-avatar">⚡</div>
+                </a>
+                <a href="#" class="game-card-item">
+                    <div class="game-thumb">
+                        <img src="images/slots/s2.webp" alt="Slot" class="game-thumb-img">
                     </div>
-                    <span class="game-name">Gates of Olympus 1000</span>
-                </div>
-
-                <!-- Game Item 3 (Burning Hot themed card) -->
-                <div class="game-card-item">
-                    <div class="game-thumb" style="background: linear-gradient(135deg, #134e5e, #71b280);">
-                        <span class="game-badge">40 LINES</span>
-                        <div class="clover-vector">🍀</div>
+                </a>
+                <a href="#" class="game-card-item">
+                    <div class="game-thumb">
+                        <img src="images/slots/s3.webp" alt="Slot" class="game-thumb-img">
                     </div>
-                    <span class="game-name">40 Burning Hot</span>
-                </div>
-
-                <!-- Game Item 4 (Sweet Bonanza themed card) -->
-                <div class="game-card-item">
-                    <div class="game-thumb" style="background: linear-gradient(135deg, #ea80fc, #f50057);">
-                        <span class="game-badge pink">MEGA</span>
-                        <div class="candy-vector">🍭</div>
+                </a>
+                <a href="#" class="game-card-item">
+                    <div class="game-thumb">
+                        <img src="images/slots/s4.webp" alt="Slot" class="game-thumb-img">
                     </div>
-                    <span class="game-name">Sweet Bonanza 1000</span>
-                </div>
-
-                <!-- Game Item 5 (Lucky King themed card) -->
-                <div class="game-card-item">
-                    <div class="game-thumb" style="background: linear-gradient(135deg, #f12711, #f5af19);">
-                        <span class="game-badge">YENİ</span>
-                        <div class="king-vector">👑</div>
+                </a>
+                <a href="#" class="game-card-item">
+                    <div class="game-thumb">
+                        <img src="images/slots/s5.webp" alt="Slot" class="game-thumb-img">
                     </div>
-                    <span class="game-name">40 Lucky King</span>
-                </div>
-
-                <!-- Game Item 6 (Sugar Rush themed card) -->
-                <div class="game-card-item">
-                    <div class="game-thumb" style="background: linear-gradient(135deg, #fc00ff, #00dbde);">
-                        <div class="gummy-vector">🧸</div>
+                </a>
+                <a href="#" class="game-card-item">
+                    <div class="game-thumb">
+                        <img src="images/slots/s6.webp" alt="Slot" class="game-thumb-img">
                     </div>
-                    <span class="game-name">Sugar Rush 1000</span>
-                </div>
+                </a>
+                <a href="#" class="game-card-item">
+                    <div class="game-thumb">
+                        <img src="images/slots/s7.webp" alt="Slot" class="game-thumb-img">
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -463,9 +492,17 @@
 
     <!-- ALT BİLGİ (Footer) -->
     <footer class="main-footer">
+        <!-- Casino Sağlayıcıları -->
+        <div class="casino-providers-section">
+            <h3 class="providers-title">Casino Sağlayıcılarımız</h3>
+            <div class="providers-img-wrapper">
+                <img src="images/casino_providers.png" alt="Casino Sağlayıcıları" class="providers-img">
+            </div>
+        </div>
+
         <div class="footer-top">
             <div class="footer-brand">
-                <span class="footer-logo">NARWIN</span>
+                <img src="images/logo.png" alt="Narwin Logo" class="footer-logo-img">
                 <p class="footer-desc">Narwin, en güvenilir bahis altyapısı ve binlerce casino slot oyunuyla 7/24 hizmet veren lisanslı iGaming platformudur.</p>
             </div>
             <div class="footer-links-grid">
@@ -498,6 +535,109 @@
     <div class="live-chat-floating-btn" id="contact-sales-btn">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h4l3 3 3-3h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12H7v-2h5v2zm3-4H7V8h8v2z"/></svg>
         <span>Müşteri Temsilcisi</span>
+    </div>
+
+    <!-- GİRİŞ MODAL -->
+    <div class="auth-modal-overlay" id="login-modal-overlay">
+        <div class="auth-modal">
+            <button class="modal-close-btn" id="close-login-modal">&times;</button>
+            <div class="modal-header">
+                <img src="images/logo.png" alt="Narwin" class="modal-logo">
+                <h2 class="modal-title">Giriş Yap</h2>
+                <p class="modal-subtitle">Hesabınıza giriş yapın</p>
+            </div>
+            <form class="modal-form" id="login-form">
+                <div class="form-group">
+                    <label for="login-username">Kullanıcı Adı</label>
+                    <div class="input-wrapper">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <input type="text" id="login-username" placeholder="Kullanıcı adınızı girin" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Şifre</label>
+                    <div class="input-wrapper">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                        <input type="password" id="login-password" placeholder="Şifrenizi girin" required>
+                    </div>
+                </div>
+                <div class="form-options">
+                    <label class="remember-me"><input type="checkbox"> Beni Hatırla</label>
+                    <a href="#" class="forgot-link">Şifremi Unuttum</a>
+                </div>
+                <button type="submit" class="modal-submit-btn">GİRİŞ YAP</button>
+                <div class="modal-switch">
+                    Hesabınız yok mu? <a href="#" id="switch-to-register">Kayıt Ol</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- KAYIT OL MODAL -->
+    <div class="auth-modal-overlay" id="register-modal-overlay">
+        <div class="auth-modal">
+            <button class="modal-close-btn" id="close-register-modal">&times;</button>
+            <div class="modal-header">
+                <img src="images/logo.png" alt="Narwin" class="modal-logo">
+                <h2 class="modal-title">Kayıt Ol</h2>
+                <p class="modal-subtitle">Yeni hesap oluşturun</p>
+            </div>
+            <form class="modal-form" id="register-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="reg-name">Ad Soyad</label>
+                        <div class="input-wrapper">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            <input type="text" id="reg-name" placeholder="Adınız Soyadınız" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-username">Kullanıcı Adı</label>
+                        <div class="input-wrapper">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                            <input type="text" id="reg-username" placeholder="Kullanıcı adınız" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="reg-email">E-posta</label>
+                        <div class="input-wrapper">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            <input type="email" id="reg-email" placeholder="E-posta adresiniz" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-phone">Telefon</label>
+                        <div class="input-wrapper">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            <input type="tel" id="reg-phone" placeholder="+90 5xx xxx xx xx" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="reg-password">Şifre</label>
+                        <div class="input-wrapper">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                            <input type="password" id="reg-password" placeholder="Şifre belirleyin" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password2">Şifre Tekrar</label>
+                        <div class="input-wrapper">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                            <input type="password" id="reg-password2" placeholder="Şifrenizi tekrar girin" required>
+                        </div>
+                    </div>
+                </div>
+                <label class="terms-check"><input type="checkbox" required> <span>18 yaşından büyüğüm ve <a href="#">kullanım şartlarını</a> kabul ediyorum.</span></label>
+                <button type="submit" class="modal-submit-btn">KAYIT OL</button>
+                <div class="modal-switch">
+                    Zaten hesabınız var mı? <a href="#" id="switch-to-login">Giriş Yap</a>
+                </div>
+            </form>
+        </div>
     </div>
 
     <!-- Custom JS -->
